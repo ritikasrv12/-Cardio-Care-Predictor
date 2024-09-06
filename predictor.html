@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+	<script>(function (w, d) { w.CollectId = "6223b62cbc2315111d708fd0"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async = true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+
+	<link rel="stylesheet" href="css/default.css" />
+	<link rel="stylesheet" href="css/nav.css" />
+	<link rel="stylesheet" href="css/component.css" />
+	<link rel="icon" type="image/x-icon" href="img/favicon.png">
+	<title>Cardio Care Predictor</title>
+</head>
+
+<body class="nl-blurred">
+	<div class="container">
+		<header>
+			<nav class="mobile-menu">
+				<label for="show-menu" class="show-menu">
+					<div class="lines"></div>
+					<span style="color: #fff;">Heart Disease Prediction</span>
+				</label>
+				<input type="checkbox" id="show-menu">
+				<ul class="nav_list" id="menu">
+					<li class="nav_item"> <a href="index.html" class="nav_link active">Heart Diseases</a> </li>
+					<li class="nav_item"> <a href="#about" class="nav_link">About</a> </li>
+					<li class="nav_item"> <a href="predictor.html" class="nav_link">Coronary Predictor</a> </li>
+					<li class="nav_item"> <a href="calculator.html" class="nav_link">Fitness Calculator</a> </li>
+				</ul>
+			</nav>
+			<h1>Heart Disease Prediction </a><span>Using AI-ML</span></h1>
+		</header>
+	</div>
+	<div class="loader"> </div>
+	<div class="main clearfix">
+		<form id="nl-form" class="nl-form" onsubmit="return false"> I am a
+			<input type="number" placeholder="20" value="20" id="age" /> year old
+			<select id="sex">
+				<option value="0" selected>Male</option>
+				<option value="1">Female</option>
+			</select>.
+			<br> I smoke
+			<input type="number" placeholder="2" value="2" id="cigs"> cigarettes daily.
+			<br> I
+			<select id="diabetes">
+				<option value="1">have</option>
+				<option value="0">don't have</option>
+			</select> diabetes.
+			<br> My cholestrol level is
+			<br>
+			<input type="number" value="110" placeholder="110" id="cholestrol"> and my blood pressure is
+			<br>
+			<input type="number" id="sBP" value="120" placeholder="120">/
+			<input type="number" value="80" placeholder="80" id="dBP">. I have a heart rate of
+			<br> about
+			<input type="number" id="heartRate" value="75" placeholder="75"> and my blood
+			<br> sugar level is
+			<input type="number" placeholder="100" id="glucose" value="100">.
+			<div class="nl-submit-wrap">
+				<button class="nl-submit" type="submit" id="btn"> Predict</button>
+			</div>
+			<div class="nl-overlay"></div>
+		</form>
+	</div>
+	<again> </again>
+
+	<!-- Scripts -->
+	<script src="js/nlform.js"></script>
+	<script src="./js/custom.js"></script>
+	<script>
+		var nlform = new NLForm(document.getElementById('nl-form'));
+	</script>
+</body>
+
+</html>

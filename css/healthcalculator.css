@@ -1,0 +1,145 @@
+body {
+	background: #E96D65;
+	font-weight: 300;
+	overflow-x: hidden;
+	overscroll-behavior-y: contain;
+	touch-action: manipulation;
+}
+
+.box-shadow:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#navbar {
+    transition: top 0.3s;
+}
+
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.87);
+    color: black;
+    cursor: pointer;
+    padding: 7px 16px;
+    border-radius: 25px;
+}
+.card{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-color: rgba(255, 255, 255, 0.87);
+    background-clip: border-box;
+    border: none;
+    border-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+@media screen and (min-width: 462px) {
+    span#calorieResult,
+    sup>i.fa {
+        font-size: 2.5rem !important;
+    }
+    #SD {
+        font-size: 1.5rem;
+    }
+    h5.responsive {
+        font-size: 1rem !important;
+    }
+}
+
+@media screen and (max-width: 504px) and (min-width: 376px) {
+    .heading {
+        display: none;
+    }
+    #calorieResult,
+    sup>i.fa {
+        font-size: 1.41rem !important
+    }
+    h5#SD {
+        font-size: 14px !important;
+        margin-top: 6px;
+    }
+    sub.lg {
+        display: none;
+    }
+    h5.d-inline-block {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 375px) and (min-width: 319px) {
+    .heading {
+        display: none;
+    }
+
+
+    #calorieResult,
+    sup>i.fa {
+        font-size: 1.41rem !important
+    }
+
+    h5#SD {
+        font-size: 14px !important;
+        margin-top: 6px;
+    }
+
+    sub.lg {
+        display: none;
+    }
+
+    h5.d-inline-block {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .heading {
+        display: none;
+    }
+    #calculateTitle,
+    #BMRResult,
+    #SD {
+        font-size: 1.2rem;
+    }
+    .text-danger {
+        font-size: 0.8rem;
+    }
+    sub.lg {
+        display: none;
+    }
+    span {
+        font-size: 20px;
+    }
+    h5#BMRResult,
+    span.calorieResult,
+    sup>i.fa {
+        font-size: 1rem;
+    }
+    h5#SD {
+        font-size: 13px !important;
+        margin-top: 6px;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
+}
+img {
+    transition: transform .2s;
+    max-width: 100%;
+    height: auto;
+    cursor: zoom-in;
+}
+img:hover {
+    transform: scale(1.5);
+    z-index: 2;
+}
